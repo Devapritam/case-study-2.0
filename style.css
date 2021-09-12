@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(#fff, #f38ec9);
+}
+
+.heading {
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.heading h2 {
+    transition: transform 0.5s;
+    cursor: pointer;
+    font-family: 'Potta One', cursive;
+    font-size: 1.6em;
+}
+
+.heading h2 span {
+    color: #f11054;
+    font-family: 'Potta One', cursive;
+    font-size: 1.2em;
+}
+
+.heading hr {
+    display: none;
+}
+
+.heading.sticky {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.heading.sticky hr {
+    display: none;
+}
+
+.heading h2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+hr {
+    height: 1px;
+    color: #ccc;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    position: fixed;
+    bottom: 36px;
+    right: 37px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    font-size: 18px;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    border: 7px solid orange;
+    z-index: 10000;
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+button.active {
+    display: block;
+    cursor: pointer;
+}
+
+.no1 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+.no1 b {
+    position: absolute;
+    top: 3%;
+    font-size: 15px;
+    left: 7%;
+}
+
+.no1 img {
+    height: 52%;
+}
+
+.resultDiv {
+    background: #ccc;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no1 h4 {
+    line-height: 30px;
+}
+
+.resultDiv hr {
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.resultDiv h4 {
+    margin-top: 10px;
+}
+
+.resultDiv label {
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resultDiv label:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.no1 span {
+    color: #f11054;
+    z-index: 1000000000;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.no1 span:hover {
+    transform: scale(0.9);
+}
+
+.no2 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+.no2 b {
+    position: absolute;
+    top: 3%;
+    font-size: 15px;
+    left: 7%;
+}
+
+.no2 img {
+    height: 52%;
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.resultDiv {
+    background: #ccc;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no2 h4 {
+    line-height: 30px;
+}
+
+.resultDiv hr {
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.resultDiv h4 {
+    margin-top: 10px;
+}
+
+.resultDiv label {
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resultDiv label:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.no2 span {
+    color: #f11054;
+    z-index: 1000000000;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.no2 span:hover {
+    transform: scale(0.9);
+}
+
+.no3 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+.no3 b {
+    position: absolute;
+    top: 3%;
+    font-size: 15px;
+    left: 7%;
+}
+
+.no3 img {
+    height: 42%;
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.resultDiv {
+    background: #ccc;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no3 h4 {
+    line-height: 30px;
+}
+
+.resultDiv hr {
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.resultDiv h4 {
+    margin-top: 10px;
+}
+
+.resultDiv label {
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resultDiv label:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.no3 span {
+    color: #f11054;
+    z-index: 1000000000;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.no3 span:hover {
+    transform: scale(0.9);
+}
+
+.no4 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+.no4 b {
+    position: absolute;
+    top: 3%;
+    font-size: 15px;
+    left: 7%;
+}
+
+.no4 img {
+    height: 50%;
+    width: 40%;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+
+.resultDiv {
+    background: #ccc;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no4 h4 {
+    line-height: 30px;
+}
+
+.resultDiv hr {
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.resultDiv h4 {
+    margin-top: 10px;
+}
+
+.resultDiv label {
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resultDiv label:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.no4 span {
+    color: #f11054;
+    z-index: 1000000000;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.no4 span:hover {
+    transform: scale(0.9);
+}
+
+.no5 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+.no5 b {
+    position: absolute;
+    top: 3%;
+    font-size: 15px;
+    left: 7%;
+}
+
+.no5 img {
+    height: 45%;
+    width: 42%;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+
+.resultDiv {
+    background: #ccc;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no5 h4 {
+    line-height: 30px;
+}
+
+.resultDiv hr {
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.resultDiv h4 {
+    margin-top: 10px;
+}
+
+.resultDiv label {
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resultDiv label:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.no5 span {
+    color: #f11054;
+    z-index: 1000000000;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.no5 span:hover {
+    transform: scale(0.9);
+}
+
+.summary {
+    background: #f11054;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+}
+
+.summary span {
+    font-weight: bold;
+    color: rgb(0, 204, 255);
+    font-size: 1.1em;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    box-shadow: -8px -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.objectives {
+    background: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 80%);
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.objectives h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 23px;
+    text-align: center;
+}
+
+.objectives h2 img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.objectives .mobilenetH2 {
+    background: #293fa0;
+    width: 20%;
+    height: 20%;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 8px 2px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgb(108, 98, 240);
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.objectives .mobilenetH2:hover {
+    transform: translateY(-5px);
+}
+
+.objectives h3 {
+    color: #f11054;
+    font-weight: bolder !important;
+}
+
+.objectives h3 .span1 {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.objectives h3 .span2 {
+    color: #777700;
+    font-weight: bolder;
+}
+
+

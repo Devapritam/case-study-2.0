@@ -136,7 +136,7 @@
         const header = document.querySelector(".heading");
         const topBtn = document.querySelector(".topBtn");
         header.classList.toggle("sticky", window.scrollY > 0);
-        topBtn.classList.toggle('active', window.scrollY > 0);
+        topBtn.classList.toggle('active', window.scrollY > 200);
 
         topBtn.addEventListener('click', () => {
             window.scrollTo(0, 0);

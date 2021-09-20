@@ -534,6 +534,7 @@ button.active {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    border: none;
 }
 
 .objectives .mobilenetH2 {
